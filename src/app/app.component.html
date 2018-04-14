@@ -1,0 +1,13 @@
+<div class="container">
+  <form [formGroup]="imgform" (ngSubmit)="onInsert()">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter Name" formControlName="nm">
+  </div>
+  <div class="form-group">
+    <input type="file" class="form-control" placeholder="Select Image" formControlName="img" (change)="fileChange($event)">
+  </div>
+  <div class="form-group">
+    <button type="submit" class="form-control">Insert</button>
+  </div>
+  </form>
+</div>
